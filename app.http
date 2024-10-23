@@ -1,0 +1,52 @@
+POST http://localhost:3000/login/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzI5NjUwODYxfQ.75VJ3wwVpeh5fg6mZJ7E00ylAr3tH0BV9xj7apv3g0w
+
+Content-Type: application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
+
+###
+GET http://localhost:3000/transactions/:id/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzI5NjUwODYxfQ.75VJ3wwVpeh5fg6mZJ7E00ylAr3tH0BV9xj7apv3g0w
+
+
+###
+POST http://localhost:3000/transactions/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzI5NjUwODYxfQ.75VJ3wwVpeh5fg6mZJ7E00ylAr3tH0BV9xj7apv3g0w
+
+Content-Type: application/json 
+
+{
+  "id": "1",
+  "type": "income",
+  "amount": 2323,
+  "date": 12/10/2024,
+  "description": "Transaction successful",
+  "category": "Deposit"
+}
+
+###
+
+###
+DELETE http://localhost:3000/transactions/:id/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzI5NjUwODYxfQ.75VJ3wwVpeh5fg6mZJ7E00ylAr3tH0BV9xj7apv3g0w
+
+###
+PUT http://localhost:3000/transactions/:id/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzI5NjUwODYxfQ.75VJ3wwVpeh5fg6mZJ7E00ylAr3tH0BV9xj7apv3g0w
+
+Content-Type: application/json
+{
+  "id": "1",
+  "type": "income",
+  "amount": 232300,
+  "date": 12/10/2024,
+  "description": "Transaction successful",
+  "category": "Deposit"
+}
+###
+GET http://localhost:3000/summary/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzI5NjUwODYxfQ.75VJ3wwVpeh5fg6mZJ7E00ylAr3tH0BV9xj7apv3g0w
