@@ -1,4 +1,4 @@
-Floww.ai Node JS - Backend Assignment
+# Floww.ai Node JS - Backend Assignment
 
 Given two files `app.js` and a database file `covid19IndiaPortal.db` consisting of three tables `state`, `district` and `user`.
 
