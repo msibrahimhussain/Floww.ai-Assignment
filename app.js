@@ -5,7 +5,7 @@ const path = require("path");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
-const databasePath = path.join(__dirname, "transactionsDetails.db");
+const databasePath = path.join(__dirname, "transactionsList.db");
 
 const app = express();
 
