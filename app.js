@@ -78,12 +78,12 @@ app.post("/login/", async (request, response) => {
 });
 
 app.post("/transactions/", authenticateToken, async (request, response) => {
-  const { id, type, category, amount, date, description } = request.body;
+  const { type, category, amount, date, description } = request.body;
   const postTransactionQuery = `
   INSERT INTO
-    transactions (id, type, category, amount, date, description)
+    transactions (type, category, amount, date, description)
   VALUES
-    (${id}, '${type}', ${category}, ${amount}, ${date}, ${description});`;
+    ('${type}', ${category}, ${amount}, ${date}, ${description});`;
   await database.run(postTransactionQuery);
   response.send("transaction Successfully Added");
 });
