@@ -81,7 +81,7 @@ app.post("/transactions/", authenticateToken, async (request, response) => {
   const { id, type, category, amount, date, description } = request.body;
   const postTransactionQuery = `
   INSERT INTO
-    district (id, type, category, amount, date, description)
+    transactions (id, type, category, amount, date, description)
   VALUES
     (${id}, '${type}', ${category}, ${amount}, ${date}, ${description});`;
   await database.run(postTransactionQuery);
