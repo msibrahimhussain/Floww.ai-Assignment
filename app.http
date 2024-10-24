@@ -16,7 +16,6 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNoc
 Content-Type: application/json 
 
 {
-  "id": "1"
   "type": "income",
   "amount": 2323,
   "date": "12-10-2024",
@@ -36,7 +35,6 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNoc
 
 Content-Type: application/json
 {
-  "id": "1",
   "type": "income",
   "amount": 232300,
   "date": 12/10/2024,
